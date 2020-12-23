@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+header {
+    grid-area: cabeçalho;
+    width: 100%;
+    display: absolute;
+}
+
+header img {
+    max-height: 100%;
+}
+
+section {
+    grid-area: section;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-area: rodape;
+    background-color: #f4f4f4;
+    flex-wrap: wrap;
+    height: 585px;
+    
+}
+
+body {
+    display: grid;
+    max-width: 100%;
+    max-height: 100%;
+    grid-template-columns: repeat(3, 640px);
+    grid-template-rows: 1100px 1800fr 550px;
+    grid-template-areas: 
+        'cabeçalho cabeçalho cabeçalho'
+        'section section section'
+        'rodape rodape rodape';
+    background-color: rgb(243, 235, 201);
+    font-family: 'Poppins';
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 15px;
+    column-gap: 5px;
+}
+
+.flex-text{
+    flex-basis: 100%;
+    max-height: 100px;
+    color: #383838;
+    color: #383838;
+    font-size: 1.4em;
+    font-weight: 50;
+}
+
+
+.flex-1{
+    flex-basis: 50%;
+    border-left: 20px solid #060708;
+    border-right: 20px solid #060708;
+    border-bottom: none;
+    
+}
+
+.flex-3{
+    flex-basis: 75%;
+    max-width: 1035px;
+}
+
+.flex-4{
+    flex-basis: 25%;
+    max-width: 505px;
+}
+
+.descricao {
+    position: absolute;
+}
+
+.section{
+    margin-left: 140px;
+   
+}
+
+.section .container-flex {
+    margin: 0px auto;
+    justify-content: flex-start;
+    align-items: center;
+    }
+
+.section .container-flex div{
+    min-height: 100px;
+    
+}
+
+@font-face {
+    src: url(fonte/Poppins-Black.ttf);
+    src: url(fonte/Poppins-BlackItalic.ttf);
+    src: url(fonte/Poppins-Bold.ttf);
+    src: url(fonte/Poppins-ExtraBold.ttf);
+    font-family: 'Poppins';    
+    font-weight: normal;
+}
+
+
+.icon {
+    margin: 5px;
+    position: relative;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
